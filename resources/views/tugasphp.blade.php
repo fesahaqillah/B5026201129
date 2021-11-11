@@ -70,7 +70,7 @@
                                 <option value=""></option>
                                 <option value="1">Semarang</option>
                                 <option value="2">Surabaya</option>
-                                <option value="3">Jakarta</option>
+                                <option value="3">Jogja</option>
                             </select>
                         </div>
                     </div>
