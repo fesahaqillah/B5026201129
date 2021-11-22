@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
-</head>
-<body>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<h2>www.malasngoding.com</h2>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<title>PEMROGRAMAN WEB</title>
+</head>
+<body class="container mt-3 m-6">
 	<h3>Data Absen Pegawai</h3>
 
-	<a href="/absen/tambah"> + Tambah Absen Pegawai Baru</a>
+	<a href="/absen/tambah" class="btn btn-info" > + Tambah Absen</a>
 
 	<br/>
 	<br/>
 
-	<table border="1">
+	<table <table class="table table-hover">
 		<tr>
 			<th>ID</th>
 			<th>IDPegawai</th>
@@ -36,6 +40,6 @@
 		@endforeach
 	</table>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
