@@ -1,26 +1,45 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>PEMROGRAMAN WEB</title>
-</head>
-<body>
+@extends('layout.ceria')
 
-	<h2><a href="https://www.malasngoding.com"></a></h2>
-	<h3>Absen Pegawai</h3>
+@section('title', 'ABSEN PEGAWAI')
 
-	<a href="/absen"> Kembali</a>
+@section('isikonten')
+
+@section('judulhalaman', 'ABSEN PEGAWAI')
+<br>
+
+	<a href="/absen" class="btn btn-secondary"> Kembali</a>
 
 	<br/>
 	<br/>
 
 	<form action="/absen/store" method="post">
 		{{ csrf_field() }}
-		ID <input type="number" name="ID" required="required"> <br/>
-		IDPegawai <input type="number" name="IDPegawai" required="required"> <br/>
-		Tanggal <input type="datetime" name="Tanggal" required="required"> <br/>
-		Status <textarea name="Status" required="required"></textarea> <br/>
-		<input type="submit" value="Simpan Data">
-	</form>
+        Pegawai <select id="IDPegawai" name="IDPegawai" required="required" class="form-control">
+            @foreach($pegawai as $p)
+                <option value="{{ $p->pegawai_id }}"> {{ $p->pegawai_nama }}</option>
+            @endforeach
+        </select><br>
+        <div class="form-group">
+            <label for="datetimepicker" class="control-label">Tanggal </label>
+                <div class=' input-group date ' id='datetimepicker'>
+                    <input type='text' required="required" class="form-control" name="Tanggal" />
+                    <span class="input-group-addon input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                    </span>
+                </div>
+            </div>
 
-</body>
-</html>
+		Status
+        <div class="form-check mt-2">
+            <input type="radio" class="form-check-input" id="hadir" name="Status" value="H">
+            <label for="hadir">HADIR</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="tidak" name="Status" value="T" checked="checked">
+            <label for="tidak">TIDAK HADIR</label><br>
+        </div>
+
+		<center> <input type="submit" value="Simpan Data" class="btn btn-primary"> </center>
+	</form>
+    @endsection
+
