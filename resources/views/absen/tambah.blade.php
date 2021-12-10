@@ -14,11 +14,15 @@
 
 	<form action="/absen/store" method="post">
 		{{ csrf_field() }}
-        Pegawai <select id="IDPegawai" name="IDPegawai" required="required" class="form-control">
+        Pegawai
+        <select id="IDPegawai" name="IDPegawai" required="required" class="form-control">
             @foreach($pegawai as $p)
                 <option value="{{ $p->pegawai_id }}"> {{ $p->pegawai_nama }}</option>
             @endforeach
-        </select><br>
+        </select>
+        <br>
+
+        {{-- Tanggal --}}
         <div class="form-group">
             <label for="datetimepicker" class="control-label">Tanggal </label>
                 <div class=' input-group date ' id='datetimepicker'>

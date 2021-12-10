@@ -42,20 +42,11 @@
         <a href="/absen"> Absen</a>
       </li>
       <li>
+        <a href="#"> Tugas Minggu Depan</a>
+      </li>
+      <li>
         <a href="#"> Praktikum</a>
       </li>
-      {{-- <li>
-        <a href="#"> Top Review</a>
-      </li>
-      <li>
-        <a href="#"><span class="fa fa-cog mr-3"></span> Settings</a>
-      </li>
-      <li>
-        <a href="#"><span class="fa fa-support mr-3"></span> Support</a>
-      </li>
-      <li>
-        <a href="#"><span class="fa fa-sign-out mr-3"></span> Sign Out</a>
-      </li> --}}
     </ul>
 
     </nav>
@@ -64,6 +55,16 @@
         <h1>@yield('judulhalaman')</h1>
         @section('isikonten')
         @show
+        <br>
+        <br>
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+    <center> <div class="copyright">
+      &copy; Copyright <strong><span>Fesa Haqillah Haya 5026201129</span></strong>
+    </div></center>
+
+    {{-- </footer>
+
     </div>
 
     </div>
@@ -98,6 +99,14 @@
             $('#datetimepicker').datetimepicker({format : "YYYY-MM-DD hh:mm", "defaultDate":new Date() });
         });
     </script>
+
+    {{-- <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Hardhika Propitadewa 5026201015</span></strong>
+    </div> --}}
+
+    {{-- </footer> --}}
 
 </body>
 </html>
