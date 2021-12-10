@@ -34,7 +34,7 @@
             <h5 class="text-light mt-3">Fesa Haqillah Haya</h5>
             <h6 class="text-light">5026201129</h6>
         </div>
-    <ul class="list-unstyled components" style="margin-bottom: 245px" >
+    <ul class="list-unstyled components" style="margin-bottom: 148px" >
       <li>
         <a href="/pegawai"> Pegawai</a>
       </li>
@@ -42,20 +42,17 @@
         <a href="/absen"> Absen</a>
       </li>
       <li>
-        <a href="#"> Tugas Minggu Depan</a>
+        <a href="#"> Kertas HVS</a>
       </li>
-      <li>
-        <a href="#"> Praktikum</a>
-      </li>
+
     </ul>
 
     </nav>
 
     <div class="container-fluid" style="margin-top:70px">
-        <h1>@yield('judulhalaman')</h1>
+        <center><h1>@yield('judulhalaman')</h1></center>
         @section('isikonten')
         @show
-        <br>
         <br>
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
@@ -63,7 +60,7 @@
       &copy; Copyright <strong><span>Fesa Haqillah Haya 5026201129</span></strong>
     </div></center>
 
-    {{-- </footer>
+    </footer>
 
     </div>
 

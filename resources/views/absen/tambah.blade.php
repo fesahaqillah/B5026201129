@@ -4,7 +4,7 @@
 
 @section('isikonten')
 
-@section('judulhalaman', 'ABSEN PEGAWAI')
+@section('judulhalaman', 'TAMBAH ABSEN')
 <br>
 
 	<a href="/absen" class="btn btn-secondary"> Kembali</a>

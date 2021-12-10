@@ -9,9 +9,6 @@
 
 	<a href="/absen" class="btn btn-secondary"> Kembali</a>
 
-	<br/>
-	<br/>
-
 	@foreach($absen as $p)
 	<form action="/absen/update" method="post">
 		{{ csrf_field() }}

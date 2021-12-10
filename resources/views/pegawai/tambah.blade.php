@@ -4,8 +4,7 @@
 
 @section('isikonten')
 
-@section('judulhalaman', 'ABSEN PEGAWAI')
-<br>
+@section('judulhalaman', 'PEGAWAI BARU')
 
 	<a href="/pegawai" class="btn btn-secondary"> Kembali</a>
 
@@ -14,7 +13,6 @@
 
 	<form action="/pegawai/store" method="post">
 		{{ csrf_field() }}
-        Jabatan
 		Nama <input type="text" name="nama" class="form-control"> <br/>
         Jabatan <input type="text" name="jabatan" class="form-control"> <br/>
         Umur <input type="number" name="umur" class="form-control"> <br/>

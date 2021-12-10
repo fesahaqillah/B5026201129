@@ -4,13 +4,9 @@
 
 @section('isikonten')
 
-@section('judulhalaman', 'ABSEN PEGAWAI')
-<br>
+@section('judulhalaman', 'EDIT PEGAWAI')
 
 	<a href="/pegawai" class="btn btn-secondary"> Kembali</a>
-
-	<br/>
-	<br/>
 
 	@foreach($pegawai as $p)
 	<form action="/pegawai/update" method="post">
