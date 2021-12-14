@@ -42,7 +42,7 @@
         <a href="/absen"> Absen</a>
       </li>
       <li>
-        <a href="#"> Kertas HVS</a>
+        <a href="/kertashvs"> Kertas HVS</a>
       </li>
 
     </ul>

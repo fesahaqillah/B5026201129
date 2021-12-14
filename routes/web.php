@@ -48,4 +48,12 @@ Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
 Route::get('/absen/cari','AbsenController@cari');
-Route::get('/absen/detail/{id}','AbsenController@view');
+
+Route::get('/kertashvs','kertashvsController@index');
+Route::get('/kertashvs/tambah','kertashvsController@tambah');
+Route::post('/kertashvs/store','kertashvsController@store');
+Route::get('/kertashvs/edit/{id}','kertashvsController@edit');
+Route::post('/kertashvs/update','kertashvsController@update');
+Route::get('/kertashvs/hapus/{id}','kertashvsController@hapus');
+Route::get('/kertashvs/cari','kertashvsController@cari');
+Route::get('/kertashvs/detail/{id}','kertashvsController@view');
