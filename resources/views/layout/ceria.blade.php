@@ -44,7 +44,9 @@
       <li>
         <a href="/kertashvs"> Kertas HVS</a>
       </li>
-
+      <li>
+        <a href="/karyawan1"> EAS (Karyawan1)</a>
+      </li>
     </ul>
 
     </nav>

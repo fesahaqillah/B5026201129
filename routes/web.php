@@ -57,3 +57,8 @@ Route::post('/kertashvs/update','kertashvsController@update');
 Route::get('/kertashvs/hapus/{id}','kertashvsController@hapus');
 Route::get('/kertashvs/cari','kertashvsController@cari');
 Route::get('/kertashvs/detail/{id}','kertashvsController@view');
+
+Route::get('/karyawan1','karyawan1Controller@index');
+Route::get('/karyawan1/edit/{id}','karyawan1Controller@edit');
+Route::post('/karyawan1/update','karyawan1Controller@update');
+Route::get('/karyawan1/detail/{id}','karyawan1Controller@view');
